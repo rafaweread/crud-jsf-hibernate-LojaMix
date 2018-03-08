@@ -36,14 +36,7 @@
   
     </p:dialog>  
     <h:outputScript>  
-        /* 
-        <![CDATA[ */  
-function handleComplete(xhr, status, args) {  
-if(args && args.validName) {  
-$userDetail1.hide();  
-}  
-}  
-/* ]]>*/  
+ 
   
     </h:outputScript>  
     <p:dialog id="userDetail2" widgetVar="$userDetail2" header="Update User" hideEffect="explode" appendTo="@(body)" resizable="false" draggable="false" closeOnEscape="true">  
@@ -78,14 +71,7 @@ $userDetail1.hide();
   
     </p:dialog>  
     <h:outputScript id="handleCompleteScript" target="body">  
-        /* 
-        <![CDATA[ */  
-function handleComplete(xhr, status, args) {  
-if(args && args.validName) {  
-$userDetail2.hide();  
-}  
-}  
-/* ]]>*/  
+        
     </h:outputScript>  
   
     <h:form id="form1">  

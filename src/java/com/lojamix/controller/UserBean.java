@@ -11,7 +11,7 @@ import javax.faces.application.FacesMessage;
 import org.primefaces.context.RequestContext;  
 /** 
  * 
- * @author Raichand 
+ * @author Rafael 
  */  
 @ManagedBean(name = "userBean")  
 @ViewScoped  
@@ -63,8 +63,7 @@ public class UserBean implements Serializable
     public void deleteUser(User user)  
     {  
         String Name = user.getName();  
-        //FacesMessage message3= new FacesMessage(FacesMessage.SEVERITY_INFO, "Delete Item",contactName);  
-        // RequestContext.getCurrentInstance().showMessageInDialog(message3);  
+         
         userDao.delete(user);  
         FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_INFO, "Delete", "Registro deletado com sucesso");  
         RequestContext.getCurrentInstance().showMessageInDialog(message);  

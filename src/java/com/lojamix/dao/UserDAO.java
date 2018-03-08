@@ -7,7 +7,7 @@ import com.lojamix.util.HibernateUtil;
 import com.lojamix.model.User;  
 /** 
  * 
- * @author Raichand 
+ * @author Rafael 
  */  
 public class UserDAO  
 {  
